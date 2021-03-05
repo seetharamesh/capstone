@@ -9,7 +9,7 @@ class DataTable extends Component{
 
 /* Delete Functionality*/
    handleDelete = event => {
-    axios.delete(`http://localhost:8080/api/diary/${this.props.obj.id}`)
+    axios.delete(`/api/diary/${this.props.obj.id}`)
         .then(res => {
           console.log(res);
           //Very important this will perform the automatic refresh..the axios call above deletes the record from database

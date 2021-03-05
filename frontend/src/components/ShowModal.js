@@ -20,7 +20,7 @@ export default function ShowModal(props) {
   const handleSaveAndClose = () => {
     const data = {id:props.id ,entry:diaryEntryData.entry , date:props.date}
     //axios call to update the data and do the automatic update in the viewing screen using handleRefresh()
-    axios.put(`http://localhost:8080/api/diary/${props.id}`,data)
+    axios.put(`/api/diary/${props.id}`,data)
         .then(res => {
           console.log(res);
           setDiaryEntryData(res.data);

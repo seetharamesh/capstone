@@ -42,7 +42,7 @@ const RetrievePage = () => {
     //this axios call is for retrieving all diary entries which we are not using in this app
     //axios.get('http://localhost:8080/api/diary')
     //this is the axios call for selected date
-      axios.get(`http://localhost:8080/api/diary/${params}`)
+      axios.get(`/api/diary/${params}`)
           .then(res => {
             console.log(res);
             setUsersCollection(res.data);
