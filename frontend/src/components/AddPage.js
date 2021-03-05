@@ -34,7 +34,7 @@ const AddPage = () => {
       entry: entryValue
     };
     //axios request to create a row
-    axios.post('http://localhost:8080/api/diary', data)
+    axios.post('/api/diary', data)
     .then((response) => {
       console.log(response);
     }, (error) => {
