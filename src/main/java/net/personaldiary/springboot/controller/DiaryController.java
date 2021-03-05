@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 import net.personaldiary.springboot.entity.Diary;
 import net.personaldiary.springboot.repository.DiaryRepository;
 
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
 
 @RestController
 @RequestMapping("/api/diary")
