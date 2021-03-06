@@ -16,7 +16,7 @@ const AddPage = () => {
   const msg = "Your entry created successfully!"
 
   const handleSubmit = (event) => {
-    //event.preventDefault();//remove this "event" because we want to reset the form after submit
+    event.preventDefault();//Had to uncomment this for heroku.As auto refresh confuses heroku with spring
     setSubmitFlag(true);
     console.log("inside submit");
     var date = new Date(startDate);
